@@ -1,0 +1,37 @@
+---
+layout: page
+title: Downloads & Source
+---
+
+{% assign devices = "surnia,mido,kenzo,land,lettuce" | split: ',' %}
+{% assign devicesReal = "Moto E 2015 (LTE),Redmi Note 4/4x,Redmi Note 3 Pro,Redmi 3s,Yu Yuphoria" | split: ',' %}
+{% assign maintainers = "ElDainosor,merothh,dinosnore,taran105,Nikhil" | split: ',' %}
+{% assign threads = "https://forum.xda-developers.com/moto-e-2015/orig-development/rom-bootleggers-rom-moto-e-2015-lte-t3725351,https://forum.xda-developers.com/redmi-note-4/xiaomi-redmi-note-4-snapdragon-roms-kernels-recoveries--other-development/rom-bootleggersrom-mido-t3728677,https://forum.xda-developers.com/redmi-note-3/development/rom-bootleggersrom-1-9-beta-kenzo-t3746065" | split: ',' %}
+
+<div id="accordion">
+{% for devcode in devices %}
+{% for realname in devicesReal %}
+{% for manname in maintainers %}
+  <div class="card" style="background:#2e2e3a!important">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <i class="material-icons">perm_device_information</i> {{ realname }} ({{ devcode }})
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+      <p><strong>Official Maintainer:</strong> ElDainosor</p>
+      <div class="btn-group" role="group" aria-label="Downloads">
+        <button type="button" class="btn btn-secondary">XDA Thread</button>
+        <button type="button" class="btn btn-secondary">Downloads</button>
+      </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+{% endfor %}
+{% endfor %}
+    
