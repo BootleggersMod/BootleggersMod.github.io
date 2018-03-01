@@ -13,7 +13,7 @@ paginate:            5
 
 # Collections
 collections:
-    cupcakes:
+    devicelist:
 
 # About/contact
 author:
