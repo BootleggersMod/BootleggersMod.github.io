@@ -16,15 +16,16 @@ title: Downloads & Source
 
     <div id="collapse{{ forloop.index }}" class="collapse" aria-labelledby="heading{{ forloop.index }}" data-parent="#accordion">
       <div class="card-body">
-      <p><strong>Official Maintainer:</strong> </p>
+      <p><strong>Official Maintainer:</strong> {{ devicename.devmaintainer }} </p>
       <div class="btn-group" role="group" aria-label="Downloads">
-        <button type="button" class="btn btn-secondary">XDA Thread</button>
+        <a href="{{ devicename.devxdathread }}"><button type="button" class="btn btn-secondary">XDA Thread</button></a>
         <button type="button" class="btn btn-secondary">Downloads</button>
       </div>
       </div>
     </div>
   </div>
 {% endfor %}
+</div>
 
 
     
