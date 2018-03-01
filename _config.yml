@@ -11,6 +11,10 @@ url:                 http://BootleggersROM.github.io
 baseurl:             ''
 paginate:            5
 
+# Collections
+collections:
+    cupcakes:
+
 # About/contact
 author:
   name:              Bootleggers ROM
