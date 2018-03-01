@@ -52,6 +52,6 @@
     background-color:#b40073;
 }
 
-a {
+.btn-link, a {
     color:#e20090!important;
 }
