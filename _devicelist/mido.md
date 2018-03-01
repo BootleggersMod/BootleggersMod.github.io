@@ -1,6 +1,6 @@
 ---
-devcodename: surnia
-devrealname: Moto E 2015 (LTE)
-devmaintainer: /images/cupcakes/vanilla.jpg
+devcodename: mido
+devrealname: Xiaomi Redmi Note 4/4x
+devmaintainer: merothh
 devxdathread: Fluffy vanilla cream cheese on a vanilla cupcake.
 ---
