@@ -10,20 +10,18 @@ title: Downloads & Source
 
 <div id="accordion">
 {% for devcode in devices %}
-{% for realname in devicesReal %}
-{% for manname in maintainers %}
   <div class="card" style="background:#2e2e3a!important">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <i class="material-icons">perm_device_information</i> {{ realname }} ({{ devcode }})
+          <i class="material-icons">perm_device_information</i> {% for realname in devicesReal %} {{ realname }} {% endfor %}  ({{ devcode }})
         </button>
       </h5>
     </div>
 
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
-      <p><strong>Official Maintainer:</strong> {{ manname }}</p>
+      {% for manname in maintainers %} <p><strong>Official Maintainer:</strong> {{ manname }}</p> {% endfor %}
       <div class="btn-group" role="group" aria-label="Downloads">
         <button type="button" class="btn btn-secondary">XDA Thread</button>
         <button type="button" class="btn btn-secondary">Downloads</button>
@@ -32,6 +30,6 @@ title: Downloads & Source
     </div>
   </div>
 {% endfor %}
-{% endfor %}
-{% endfor %}
+
+
     
