@@ -7,8 +7,8 @@
       
                   <!--First column-->
                   <div class="col-md-6 text-right">
-                      <h5 class="text-uppercase">Footer Content</h5>
-                      <p>Here you can use rows and columns here to organize your footer content.</p>
+                      <h5 class="text-uppercase">{{ site.title}}</h5>
+                      <p>{{ site.tagline }}</p>
                   </div>
                   <!--/.First column-->
       
@@ -16,10 +16,14 @@
                   <div class="col-md-6">
                       <h5 class="text-uppercase">Links</h5>
                       <ul class="list-unstyled">
-                          <li><a href="#!">Link 1</a></li>
-                          <li><a href="#!">Link 2</a></li>
-                          <li><a href="#!">Link 3</a></li>
-                          <li><a href="#!">Link 4</a></li>
+    {% assign pages_list = site.pages | sort:"url" %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "page" %}
+                          <li><a href="{{ node.url }}">{{ node.title }}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
                       </ul>
                   </div>
                   <!--/.Second column-->
