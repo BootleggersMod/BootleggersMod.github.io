@@ -34,7 +34,7 @@
     padding-bottom:0px;
 }
 
-.bootlegintro div  {
+.bootlegintrotext {
     padding-top:0em;
 }
 
@@ -70,5 +70,5 @@
     .bootlegintro {
     padding-bottom:10px;
     }
-    .bootlegintro div {    padding-top:12em;}
+    .bootlegintrotext {    padding-top:12em;}
     }
