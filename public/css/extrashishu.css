@@ -25,19 +25,11 @@
     padding-top:9em;
 }
 
-.shishuinfopart {
+.shishumain  {
     border-radius:2px;
     box-shadow:0 0 4px 0 rgba(0,0,0,.14),0 3px 4px 0 rgba(0,0,0,.12),0 1px 5px 0 rgba(0,0,0,.2)!important;
     background:rgba(0,0,0,0.25)!important;
 }
-
-/* This is just a tweak for the layout */
-    @media only screen and (device-width:768px) {
-    .shishuinfopart {
-    padding-top:12em;
-    padding-bottom:10px;
-    }
-    }
 
 .bootlegintro {
     padding-top:0em;
@@ -69,3 +61,12 @@
 .btn-link, a {
     color:#e20090!important;
 }
+
+
+/* This is just a tweak for the layout */
+    @media only screen and (device-width:768px) {
+    .bootlegintro {
+    padding-top:12em;
+    padding-bottom:10px;
+    }
+    }
