@@ -9,6 +9,9 @@
         <img src="{{ site.baseurl }}/img/btlglogohover.png" class="btlogoh" width="30" height="30" alt="" style="display:none;position:absolute;">
       </a>
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0" style="text-transform: uppercase;">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.url }}/blog">Blog</a>
+          </li>
     {% assign pages_list = site.pages | sort:"url" %}
     {% for node in pages_list %}
       {% if node.title != null %}

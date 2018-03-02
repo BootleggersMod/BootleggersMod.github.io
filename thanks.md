@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "A Thank You Note"
+title: "Thanks"
 permalink: thanks.html
 ---
 
