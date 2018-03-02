@@ -7,7 +7,7 @@ permalink:           pretty
 title:                Bootleggers ROM
 tagline:             'Making you feel like 家'
 description:         'Bootleggers ROM is an aftermarket firmware based on Ground Zero Open Source Project (GZOSP) and brings custom features with the most useful apps on your device.'
-url:                 http://BootleggersROM.github.io
+url:                 http://BootleggersMod.github.io
 baseurl:             ''
 paginate:            5
 exclude:            ['README.md', 'License.md', 'intro.old']
@@ -20,7 +20,7 @@ collections:
 # About/contact
 author:
   name:              Bootleggers ROM
-  url:               http://BootleggersROM.github.io
+  url:               http://BootleggersMod.github.io
 
 # Custom vars
 version:             2.0 Beta
