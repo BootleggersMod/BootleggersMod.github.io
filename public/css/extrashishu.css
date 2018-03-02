@@ -31,6 +31,18 @@
     background:rgba(0,0,0,0.25)!important;
 }
 
+/* This is just a tweak for the layout */
+    @media only screen and (device-width:768px) {
+    padding-top:12em;
+    padding-bottom:10px;
+    }
+
+.bootlegintro {
+    padding-top:0em;
+    padding-bottom:0px;
+}
+
+
 
 /*bg*/
 .shishubg  {
