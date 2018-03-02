@@ -63,7 +63,7 @@
 
 
 /* This is just a tweak for the layout */
-    @media (max-width: 600px) {
+    @media (min-width: 600px) {
     .bootlegintro {
     padding-top:12em;
     padding-bottom:10px;
